@@ -31,5 +31,5 @@ jobs:
     - run: pm2 link b3wm61otzh7b1t1 qtgvlit0x7h294i
     - run: pm2 start index.js
     - run: pm2 save
-    - run: pm2 run build
-    - run: pm2 run
+    - run: npm start build
+    - run: npm start
