@@ -26,8 +26,4 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm install -g pm2
-    - run: pm2 link 0mcdiymqyy0r66n s4ho1k4a0hrnwss
-    - run: pm2 save
-    - run: pm2 monit build --if-present
-    - run: pm2 monit
+    - run: pm2 start build --if-present
