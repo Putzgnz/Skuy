@@ -349,3 +349,4 @@ console.log(chalk.redBright(`Update ${__filename}`))
 delete require.cache[file]
 require(file)
 })
+const keep_alive = require('./keep_alive.js')
